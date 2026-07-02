@@ -7,7 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from schemas import ChatRequest, ChatResponse, HealthResponse
 from retrieval import AssessmentRetriever
 from agent import handle_chat
-CATALOG_PATH = os.getenv("CATALOG_PATH", "data/catalog.json")
+CATALOG_PATH = os.getenv("CATALOG_PATH", "catalog.json")
 
 app = FastAPI(title="SHL Assessment Recommender")
 

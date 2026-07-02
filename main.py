@@ -4,10 +4,9 @@ from typing import Optional
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.schemas import ChatRequest, ChatResponse, HealthResponse
-from app.retrieval import AssessmentRetriever
-from app.agent import handle_chat
-
+from schemas import ChatRequest, ChatResponse, HealthResponse
+from retrieval import AssessmentRetriever
+from agent import handle_chat
 CATALOG_PATH = os.getenv("CATALOG_PATH", "data/catalog.json")
 
 app = FastAPI(title="SHL Assessment Recommender")

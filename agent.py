@@ -1,9 +1,9 @@
 from typing import List
 
-from app.schemas import ChatResponse, Message, Recommendation
-from app.retrieval import AssessmentRetriever
-from app.prompts import SYSTEM_PROMPT, build_user_prompt
-from app.llm_client import call_llm_json
+from schemas import ChatResponse, Message, Recommendation
+from retrieval import AssessmentRetriever
+from prompts import SYSTEM_PROMPT, build_user_prompt
+from llm_client import call_llm_json
 
 DEFAULT_RETRIEVAL_SIZE = 25
 MAX_RETURNED_RECOMMENDATIONS = 10
